@@ -1,6 +1,6 @@
 # OnlineMovieStreaming
 
-* created using only PHP and HTML/CSS
+* created using only PHP,HTML/CSS & MySQL server
 
 - create a "uploads" folder to store the uploaded images/posters of the movie/video.
 - create a "video-uploads" folder to store uploaded videos of the corresponding image.
