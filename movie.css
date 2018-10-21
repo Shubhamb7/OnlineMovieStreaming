@@ -1,0 +1,30 @@
+
+body{
+  background-color: black;
+}
+.jumbotron-fluid{
+  background-color: #2d2f33;
+  color: #e2dd31;
+  margin-left: 2%;
+  margin-right: 2%;
+  height: 150vh;
+
+}
+.jumbotron-fluid h1:hover{
+  color: #85c639;
+}
+.jumbotron-fluid h4:hover{
+  color: #85c639;
+}
+
+.jumbotron-fluid h5{
+  color:#9e8b24;
+}
+.container video{
+  margin-left: 2%;
+}
+
+.page-footer{
+  background-color: black;
+  color: white;
+}

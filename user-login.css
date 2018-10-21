@@ -1,0 +1,63 @@
+body{
+  font-family: sans-serif;
+  height: 100%;
+}
+
+.navbar-text{
+  font-size: 30px;
+  font-weight: bold;
+}
+.navbar li{
+  padding: 0 40px;
+}
+.nav-item a{
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+
+}
+.nav-item a:hover{
+  color: orange;
+  border-bottom: 2px solid orange;
+}
+
+.jumbotron{
+  position: sticky;
+  margin-top: 7%;
+
+}
+.loginbutton{
+  text-align: center;
+  align-items: center;
+}
+.jumbotron h1{
+  color: black;
+  font-weight: bold;
+
+}
+.container-fluid{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0,0,0,0.7)),url(images/back.jpg);
+  height: 130vh;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+
+
+.navbar-brand img{
+  height: 80px;
+
+}
+
+
+.row img{
+  height: 60px;
+  width: 60px;
+  margin-left: 40%;
+  margin-bottom: 20%;
+}
+.page-footer{
+  background-color: black;
+  color: white;
+}

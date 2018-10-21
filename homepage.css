@@ -1,0 +1,52 @@
+body{
+  font-family: sans-serif;
+  height: 100%;
+
+}
+.navbar-text{
+  font-size: 30px;
+  font-weight: bold;
+}
+.navbar li{
+  padding: 0 40px;
+}
+.nav-item a{
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+
+}
+.navbar span{
+  font-size: 25px;
+}
+.nav-item a:hover{
+  color: orange;
+  border-bottom: 2px solid orange;
+}
+
+.navbar-brand img{
+  height: 80px;
+
+}
+.container-fluid{
+  background-image: url(images/back.jpg);
+  height: 50vh;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+  border: 2px solid grey;
+}
+.container-fluid h1{
+  color: white;
+}
+
+
+
+.page-footer{
+  background-color: black;
+  color: white;
+}
+.col a{
+  text-align: center;
+}
