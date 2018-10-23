@@ -15,7 +15,7 @@
 * only the admin has the rights to upload movies/videos and images.
 
 
-#for use :
+# For use :
 
 - truncate all the tables after importing them from the sql-files folder & edit the database name in dbh.php
 - create a "uploads" folder to store the uploaded images/posters of the movie/video.
