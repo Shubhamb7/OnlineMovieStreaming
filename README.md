@@ -1,6 +1,6 @@
 # OnlineMovieStreaming
 
-* created using PHP, HTML, CSS, Bootstrap & MySQL server
+* created using PHP, HTML, CSS, Bootstrap & MySQL
 
 * truncate all the tables after importing them & edit the database name in dbh.php
 
