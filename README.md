@@ -1,6 +1,14 @@
 # OnlineMovieStreaming
 
-* created using PHP, HTML, CSS, Bootstrap & MySQL
+
+
+# created using PHP, HTML, CSS, Bootstrap & MySQL
+
+# this website has basic functionalities : - updating user details
+#                                          - watching movies/videos
+#                                          - latest updated videos
+#                                          - most viewed videos
+#                                          - search functionality
 
 * truncate all the tables after importing them & edit the database name in dbh.php
 
@@ -10,8 +18,4 @@
 - the one to signup first is the admin
 - only the admin has the rights to upload movies/videos and images.
 
-- this website has basic functionalities : - updating user details
-                                           - watching movies/videos
-                                           - latest updated videos
-                                           - most viewed videos
-                                           - search functionality
+
