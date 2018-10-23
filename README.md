@@ -4,7 +4,7 @@
 
 # created using PHP, HTML, CSS, Bootstrap & MySQL
 
-# this website has basic functionalities : 
+# Functionalities : 
            - login system : create acc, delete acc, update user details
            - watching movies/videos
            - latest updated videos
