@@ -2,8 +2,6 @@
 
 
 
-# created using PHP, HTML, CSS, Bootstrap & MySQL
-
 # Functionalities : 
            - login system : create acc, delete acc, update user details
            - watching movies/videos
