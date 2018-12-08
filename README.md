@@ -34,4 +34,4 @@
 ![](scrshots/5.jpg)
 
 **Account details**
-![](srchots/4.jpg)
+![](scrshots/4.jpg)
