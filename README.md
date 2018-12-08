@@ -19,5 +19,19 @@
 - create a "video-uploads" folder to store uploaded videos of the corresponding image.
 
 
+# Screenshots :
 
+**Homepage**
+![](scrshots/1.jpg)
 
+**Admin page**
+![](scrshots/2.jpg)
+
+**Add movie**
+![](scrshots/3.jpg)
+
+**Movie page**
+![](scrshots/5.jpg)
+
+**Account details**
+![](srchots/4.jpg)
