@@ -12,14 +12,15 @@ if (isset($_POST['submit'])) {
   echo"<!DOCTYPE html>";
   echo"<html lang='en' dir='ltr'>";
     echo"<head>";
+    
       echo"<meta charset='utf-8'>";
       echo"<title>".$title."</title>";
       echo"<link rel='stylesheet' href='movie.css'>";
       echo"<link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css' integrity='sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO' crossorigin='anonymous'>";
     echo"</head>";
-    echo"<body>";
+    echo"<body style='background-color:#000000;'>";
 
-        echo"<div class='jumbotron-fluid'>";
+        echo"<div class='jumbotron' style='background-color:#1C1C1C;'>";
         echo"<div class='container'>";
         while($result = mysqli_fetch_assoc($records)){
             $mname = $result['name'];
@@ -34,12 +35,12 @@ if (isset($_POST['submit'])) {
 
             echo"<br>";
             echo"<a href='homepage.php' style='font-size: 20px;color:orange;border:1px solid orange;border-radius:5px;padding:10px;text-decoration:none;'>Back to Home </a>";
-          echo "<br><br><h5 style='display: inline;'><br>movie name : </h5><h1 style='display: inline;'>".ucwords($result['name'])."</h1>";
-          echo"<br><h5 style='display: inline;' >genre : </h5><h4 style='display: inline;'>".ucwords($result['genre'])."</h4>";
-          echo"<br><h5 style='display: inline;' >release year : </h5><h4 style='display: inline;'>".$result['rdate']."</h4>";
-          echo"<br><h5 style='display: inline;' >description : </h5><h4 style='display: inline;'>".ucfirst($result['decription'])."</h4>";
-          echo"<br><h5 style='display: inline;' >runtime : </h5><h4 style='display: inline;'>".$result['runtime']." mins </h4>";
-          echo"<br><h5 style='display: inline;' >views : </h5><h4 style='display: inline;'>".$result['viewers']."</h4>";
+          echo "<br><br><h5 style='display: inline;color:orange;'><br>movie name : </h5><h5 style='display: inline;color:#D8D8D8;'>".ucwords($result['name'])."</h5>";
+          echo"<br><h5 style='display: inline;color:orange;' >genre : </h5><h5 style='display: inline;color:#D8D8D8;'>".ucwords($result['genre'])."</h5>";
+          echo"<br><h5 style='display: inline;color:orange;' >release year : </h5><h5 style='display: inline;color:#D8D8D8;'>".$result['rdate']."</h5>";
+          echo"<br><h5 style='display: inline;color:orange;' >description : </h5><h5 style='display: inline;color:#D8D8D8;'>".ucfirst($result['decription'])."</h5>";
+          echo"<br><h5 style='display: inline;color:orange;' >runtime : </h5><h5 style='display: inline;color:#D8D8D8;'>".$result['runtime']." mins </h5>";
+          echo"<br><h5 style='display: inline;color:orange;' >views : </h5><h5 style='display: inline;color:#D8D8D8;'>".$result['viewers']."</h5>";
 
           echo"<br><br><br>";
           echo"<div class='embed-responsive embed-responsive-16by9'>";

@@ -44,6 +44,9 @@ session_start();
                 <button type="submit" class="btn btn-success btn-lg" name="login">Login</button>
 
               </div>
+              <div style="text-align:center;">
+                 <a href="test.php" class="btn btn-*">don't have account? Sign up now!</a>
+                </div>
               </form>
 
               </div>

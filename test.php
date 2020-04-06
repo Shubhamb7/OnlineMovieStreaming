@@ -155,11 +155,13 @@ session_start();
 
                  </div>
                  <div class="signupbutton">
-                   <br><br>
-                   <button type="submit" class="btn btn-success btn-lg" name="sub" value="submit">Sign Up</button>
-
+                  <br><br>
+                  <button type="submit" class="btn btn-success btn-lg" name="sub" value="submit">Sign Up</button>
+                  
                  </div>
-
+                 <div style="text-align:center;">
+                 <a href="user-login.php" class="btn btn-*">already have an account? Sign In</a>
+                </div>
              </div>
            </form>
 
