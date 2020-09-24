@@ -22,6 +22,9 @@
 - create a "uploads" folder to store the uploaded images/posters of the movie/video.
 - create a "video-uploads" folder to store uploaded videos of the corresponding image.
 
+# Note:
+`Only lets you upload videos upto 2mb`
+
 # Screenshots :
 
 **Homepage**
