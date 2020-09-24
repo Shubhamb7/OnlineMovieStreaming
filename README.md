@@ -23,7 +23,8 @@
 - create a "video-uploads" folder to store uploaded videos of the corresponding image.
 
 ### Note:
-`Only lets you upload videos upto 2mb`
+`Only lets you upload videos upto 2mb.
+Changes should be made in configuration file for larger files.`
 
 # Screenshots :
 
