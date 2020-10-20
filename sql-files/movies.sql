@@ -40,18 +40,6 @@ CREATE TABLE `movies` (
   `videopath` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Dumping data for table `movies`
---
-
-INSERT INTO `movies` (`mid`, `name`, `genre`, `rdate`, `runtime`, `decription`, `viewers`, `imgpath`, `videopath`) VALUES
-(1, 'rampage', 'fiction', '2017', '120', 'animals', 8, 'rampage.jpg', 'RAMPAGE Trailer.mp4'),
-(2, 'black panther', 'fiction', '2017', '140', 'super hero movie', 13, 'black panther.jpg', 'Black Panther.mp4'),
-(3, 'spiderman homecoming', 'fiction', '2018', '110', 'super hero movie', 5, 'spider-man-homecoming.jpg', 'Spider-Man Homecoming.mp4'),
-(4, 'jumanji', 'adventure', '2017', '130', '4 kids stuck in video game', 11, 'jumanji2017.jpg', 'JUMANJI 17.mp4'),
-(5, 'the conjuring', 'horror', '2013', '120', 'ghost house', 1, 'Conjuring.jpg', 'The Conjuring.mp4'),
-(6, 'the conjuring 2', 'horror', '2015', '115', 'cursed family', 1, 'conjuring2.jpg', 'The Conjuring 2.mp4'),
-(7, 'infinity wars ', 'fiction', '2018', '123', 'collaboration of all marvel characters', 3, 'infinity war.jpg', 'Avengers Infinity War.mp4');
 
 --
 -- Indexes for dumped tables
