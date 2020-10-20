@@ -43,10 +43,6 @@ CREATE TABLE `user1` (
 -- Dumping data for table `user1`
 --
 
-INSERT INTO `user1` (`id`, `username`, `passwd`, `name`, `phone`, `email`, `DOB`, `mid`) VALUES
-(1, 'shubhamb756@gmail.com', '1234', 'shubham belgaonkar', '8692849041', 'shubhamb756@gmail.com', '25/04/1998', 7),
-(4, 'soubik@gmail.com', '1234', 'soubik bera', '8622849041', 'soubik@gmail.com', '16/10/1995', 3),
-(5, 'niru@gmail.com', '1234', 'niru lal', '1234287564', 'niru@gmail.com', '16/09/1996', NULL);
 
 --
 -- Indexes for dumped tables
