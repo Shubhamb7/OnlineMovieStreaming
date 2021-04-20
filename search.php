@@ -9,7 +9,7 @@ session_start();
 <head>
   <meta charset="utf-8">
   <title>NeonFlix-Homepage</title>
-  <link rel="stylesheet" href="homepage.css" type="text/css">
+  <link rel="stylesheet" href="css/homepage.css" type="text/css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
   <body style='background-color:#000000;'>
@@ -26,9 +26,9 @@ session_start();
                   echo "<li class='nav-item'> <a href='admin.php' class='nav-link'>Add movie</a> </li>";
                 }
               }
-              echo"<li class='nav-item'> <a href='account.php' class='nav-link'>Account</a> </li>
+              echo "<li class='nav-item'> <a href='account_details.php' class='nav-link'>Account</a> </li>
 
-                  <li class='nav-item'> <a href='logout.php' class='nav-link'>Logout</a> </li>
+                  <li class='nav-item'> <a href='backend/logout.php' class='nav-link'>Logout</a> </li>
                   </ul>
                   </nav>
                   <div class='container-fluid'>
@@ -60,9 +60,9 @@ session_start();
                     <form action='search.php' method='POST'>
                       <select  name='option' style='padding:5px;'>
                         <option selected>Search By</option>
-                        <option value='1'>Name</option>
-                        <option value='2'>Genre</option>
-                        <option value='3'>Release year</option>
+                        <option value='name'>Name</option>
+                        <option value='genre'>Genre</option>
+                        <option value='rdate'>Release year</option>
                       </select>
                       <input type='text' placeholder='Enter..' name='textoption' style='margin-left:10px;margin-top:10px;padding:5px;'>
 
@@ -76,7 +76,7 @@ session_start();
         <h2 style='margin-top:0px;padding-top:0px;color:white;'>Results : </h2>
 
             <?php
-            include 'searchback.php';
+            include 'backend/search_control.php';
             ?>
 
       </div>

@@ -8,7 +8,7 @@ session_start();
  <head>
    <meta charset="utf-8">
    <title>NeonFlix-Admin</title>
-   <link rel="stylesheet" href="user.css" type="text/css">
+   <link rel="stylesheet" href="css/user.css" type="text/css">
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
  </head>
  <body>
@@ -20,7 +20,7 @@ session_start();
 
            <ul class="navbar-nav">
              <li class="nav-item"> <a href="homepage.php" class="nav-link"> Home </a> </li>
-             <li class="nav-item"> <a href="logout.php" class="nav-link"> Logout</a> </li>
+             <li class="nav-item"> <a href="backend/logout.php" class="nav-link"> Logout</a> </li>
 
            </ul>
 
@@ -32,7 +32,7 @@ session_start();
            <h1> Enter the Movie details</h1>
            <p> <b></b> </p> <br>
 
-           <form class="" action="admin-control.php" method="POST" enctype="multipart/form-data">
+           <form class="" action="backend/admin_control.php" method="POST" enctype="multipart/form-data">
 
             <input type="text" class="form-control" placeholder="Movie Name" name="mname" value=""><br>
              <input type="text" class="form-control" placeholder="Year of Release" name="release" value="">

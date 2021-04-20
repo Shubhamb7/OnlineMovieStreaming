@@ -12,7 +12,7 @@ session_start();
   <head>
     <meta charset="utf-8">
     <title>NeonFlix-Login</title>
-    <link rel="stylesheet" href="user-login.css" type="text/css">
+    <link rel="stylesheet" href="css/user-login.css" type="text/css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
   </head>
@@ -24,7 +24,7 @@ session_start();
             <span class="navbar-text">NeonFlix</span>
 
             <ul class="navbar-nav">
-              <li class="nav-item"> <a href="test.php" class="nav-link"> SignUp</a> </li>
+              <li class="nav-item"> <a href="createaccount.php" class="nav-link"> SignUp</a> </li>
 
             </ul>
 
@@ -34,7 +34,7 @@ session_start();
 
           <div class="jumbotron">
             <h1>Login to your account</h1> <br>
-            <form class="" action="Plogin.php" method="POST"> <br><br>
+            <form class="" action="backend/login_control.php" method="POST"> <br><br>
               <input type="email" class="form-control" placeholder="Usename/ Email Address" name="mail" value="">
               <br>
               <input type="password" class="form-control" placeholder="Password" name="pass" value="">
@@ -45,7 +45,7 @@ session_start();
 
               </div>
               <div style="text-align:center;">
-                 <a href="test.php" class="btn btn-*">don't have account? Sign up now!</a>
+                 <a href="createaccount.php" class="btn btn-*">don't have account? Sign up now!</a>
                 </div>
               </form>
 
