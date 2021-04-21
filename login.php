@@ -8,7 +8,7 @@ session_start();
   <head>
     <meta charset="utf-8">
     <title>NeonFlix</title>
-    <link rel="stylesheet" href="master.css" type="text/css">
+    <link rel="stylesheet" href="css/master.css" type="text/css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   </head>
   <body>
@@ -29,7 +29,7 @@ session_start();
         <div class="container">
           <div class="jumbotron">
             <h1>Watch Anywhere, <br> Watch Anytime... </h1> <br>
-            <a href="test.php" type="button" class="btn btn-danger btn-block">Sign Up Now</a>
+            <a href="createaccount.php" type="button" class="btn btn-danger btn-block">Sign Up Now</a>
           </div>
         </div>
       </div>
