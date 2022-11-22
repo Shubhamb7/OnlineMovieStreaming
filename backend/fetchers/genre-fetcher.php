@@ -1,5 +1,5 @@
 <?php
-  include '../dbh.php';
+  include __DIR__ . '/../dbh.php';
 include_once "functions.php";
 
   if($_REQUEST["screen"] == "return_genres"){

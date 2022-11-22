@@ -1,8 +1,6 @@
-
-
 <?php
   session_start();
-  include 'dbh.php';
+  include __DIR__ . '/dbh.php';
 
 
     $fname = strtolower($_POST['fname']);
@@ -22,5 +20,5 @@
     values('$username','$password','$name','$phn','$email','$dob')";
     $result = $conn->query($sql);
 
-    header("Location: user-login.php");
+    header("Location: ../user-login.php");
 ?>

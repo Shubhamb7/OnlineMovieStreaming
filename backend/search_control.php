@@ -1,6 +1,6 @@
 <?php
-include 'dbh.php';
-include 'fetchers/functions.php';
+include __DIR__ .'/dbh.php';
+include __DIR__ .'/fetchers/functions.php';
 if(isset($_POST['submit'])){
 
     $option = $_POST['option'];

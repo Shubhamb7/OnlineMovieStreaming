@@ -1,13 +1,9 @@
 <?php
   session_start();
-  include 'dbh.php';
-
-
-
+  include __DIR__ . '/dbh.php';
 
     $username =  $_POST['mail'];
     $password =  $_POST['pass'];
-
 
 
     $sql = "SELECT * FROM user1 WHERE username = '$username' AND passwd = '$password' ";
@@ -18,10 +14,8 @@
       echo "incorrect username or password";
     }else {
 
-        $_SESSION['admin'] = $row['admin'];
+        $_SESSION['id'] = $row['id'];
         header("Location: ../homepage.php");
       }
-
-    
 
 ?>

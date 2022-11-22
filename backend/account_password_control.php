@@ -1,6 +1,6 @@
 <?php
   session_start();
-  include 'dbh.php';
+  include __DIR__ . '/dbh.php';
 
 if(isset($_POST['subpass'])){
 

@@ -9,7 +9,9 @@ session_start();
    <meta charset="utf-8">
    <title>NeonFlix-Admin</title>
    <link rel="stylesheet" href="css/user.css" type="text/css">
+   <link rel="stylesheet" href="css/admin.css" type="text/css">  
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  
  </head>
  <body>
    <header>
@@ -34,7 +36,7 @@ session_start();
 
            <form class="" action="backend/admin_control.php" method="POST" enctype="multipart/form-data">
 
-            <input type="text" class="form-control" placeholder="Movie Name" name="mname" value=""><br>
+            <input type="text" class="form-control" placeholder="Movie Name" name="mname" value="" required><br>
              <input type="text" class="form-control" placeholder="Year of Release" name="release" value="">
              <br>
              <input type="text" class="form-control" placeholder="Genre" name="genre" value="">
@@ -43,7 +45,15 @@ session_start();
              <br>
              <input type="text" class="form-control" placeholder="Description..." name="desc" value="">
              <br>
-             <div class="row">
+             <label for=""><b>Switch between: Upload automatically video/image or adding video/image names and upload files manually</b></label>
+             <br>
+             <br>
+             <input type="checkbox" id="toggle_checkbox">
+             <label for="toggle_checkbox" id="bt"></label>
+	         <br>
+             <br>
+             <div class="row" id="upload1">
+ 			 
                <div class="col">
                  <table>
                    <tr>
@@ -51,7 +61,6 @@ session_start();
                      <td>
                           <div class="">
                               <input type="hidden" name="size" value="100000">
-
                               <input type="file" name="image" value="">
                           </div>
                      </td>
@@ -65,15 +74,44 @@ session_start();
                      <td>
                           <div class="">
                               <input type="hidden" name="size" value="30000000">
-
                               <input type="file" name="video" value="">
                           </div>
                      </td>
                    </tr>
                  </table>
-
                </div>
-             </div> <br><br>
+             </div>
+			 
+			 <div class="row" id="upload2">
+               <div class="col">
+                 <table>
+                   <tr>
+                     <td> <label for=""><b>Image name: </b></label> </td>
+                     <td>
+                          <div class="">
+                              <input type="hidden" name="size" value="100000">
+                              <input type="text" name="image_txt" value="">
+                          </div>
+                     </td>
+                   </tr>
+                 </table>
+               </div>
+               <div class="col">
+                 <table>
+                   <tr>
+                     <td> <label for=""><b>Video name: </b></label> </td>
+                     <td>
+                          <div class="">
+                              <input type="hidden" name="size" value="300000000">
+
+                              <input type="text" name="video_txt" value="">
+                          </div>
+                     </td>
+                   </tr>
+                 </table>
+               </div>
+             </div> 
+			 <br>
              <div class="signupbutton">
                <input type="submit" class ="btn btn-success btn-lg" name="upload" value="Submit" >
              </div>
@@ -83,11 +121,9 @@ session_start();
 
         </div>
 
-
          </div>
 
        </div>
-
 
    </div>
 
