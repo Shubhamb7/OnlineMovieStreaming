@@ -11,7 +11,8 @@ include_once __DIR__ . '/functions.php';
 
   echo"<div class='row'>";
     while($result = mysqli_fetch_assoc($records)){
-
+      !empty($result['imgpath']) ? $result['imgpath'] : $result['imgpath'] = 'default.jpg';
+        
       echoMovie($result['name'], $result['imgpath']);
 
       if ($i==4) {

@@ -15,9 +15,13 @@
     $year = $_POST['year'];
     $dob = $date."/".$month."/".$year;
 
+/* Set the "cost" parameter to 12. */
+$options = ['cost' => 12];
+/* Create the hash. */
+$hash = password_hash($password, PASSWORD_DEFAULT, $options);
 
     $sql = "INSERT INTO user1(username, passwd, name, phone, email, DOB)
-    values('$username','$password','$name','$phn','$email','$dob')";
+    values('$username','$hash','$name','$phn','$email','$dob')";
     $result = $conn->query($sql);
 
     header("Location: ../user-login.php");
