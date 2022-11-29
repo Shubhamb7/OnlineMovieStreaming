@@ -1,6 +1,6 @@
 <?php
-include '../dbh.php';
-include_once "functions.php";
+include  __DIR__ . '/../dbh.php';
+include_once __DIR__ . '/functions.php';
 
 
   $im = "SELECT * FROM movies ORDER BY name ASC" ;
@@ -11,7 +11,8 @@ include_once "functions.php";
 
   echo"<div class='row'>";
     while($result = mysqli_fetch_assoc($records)){
-
+      !empty($result['imgpath']) ? $result['imgpath'] : $result['imgpath'] = 'default.jpg';
+        
       echoMovie($result['name'], $result['imgpath']);
 
       if ($i==4) {

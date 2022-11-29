@@ -34,7 +34,7 @@ session_start();
            <form class="" action="backend/create_user_control.php" method="POST">
              <div class="row">
                <div class="col">
-                 <input type="text" class="form-control" placeholder="First Name" name="fname" value="">
+                 <input type="text" class="form-control" placeholder="First Name" name="fname" value="" required>
 
                </div>
                <div class="col">
@@ -44,9 +44,9 @@ session_start();
              </div> <br>
              <input type="text" class="form-control" placeholder="Mobile Number" name="phn" value="">
              <br>
-             <input type="email" class="form-control" placeholder="Email Address" name="mail" value="">
+             <input type="email" class="form-control" placeholder="Email Address" name="mail" value="" required>
              <br>
-             <input type="password" class="form-control" placeholder="Password" name="pass" value="">
+             <input type="password" class="form-control" placeholder="Password" name="pass" value="" required>
 
              <div class="form-group col-md-8" >
                <label for="dob"> <br> Birthday </label>

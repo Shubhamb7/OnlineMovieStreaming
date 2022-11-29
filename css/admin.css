@@ -1,0 +1,68 @@
+#toggle_checkbox {
+  display: none;	
+}
+
+#bt {
+  position: absolute;
+  right: 0;
+  left: 0;
+  display: block;
+  width: 140px;
+  height: 50px;
+  margin: 0 auto;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+#bt:before {
+  top: 8px;
+  left: 8px;
+  width: 34px;
+  height: 34px;
+  border: 3px solid red;
+}
+
+#bt:after {
+  top: 0;
+  right: 0;
+  width: 140px;
+  height: 50px;
+  border: 3px solid #143240;
+}
+
+#bt:before,
+#bt:after {
+  content: "";
+  position: absolute;
+  border-radius: 50px;
+  box-sizing: border-box;
+  transition: 0.5s ease top, 0.5s ease left, 0.5s ease right, 0.5s ease width,
+    0.5s ease height, 0.5s ease border-color;
+}
+
+#toggle_checkbox:checked + #bt:before {
+  top: 0;
+  left: 0;
+  width: 140px;
+  height: 50px;
+  border-color: #143240;
+}
+
+#toggle_checkbox:checked + #bt:after {
+  top: 8px;
+  right: 8px;
+  width: 34px;
+  height: 34px;
+  border-color: red;
+}
+
+/* The ~ will match all #id elements that follow a #toggle (immediately or not). 
+The + will match only the immediatelly follow element */
+
+#toggle_checkbox:checked~#upload1 {
+  display: none;
+}
+#toggle_checkbox:not(:checked)~#upload2 {
+  display: none;
+}
+

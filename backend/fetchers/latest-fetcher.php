@@ -1,6 +1,6 @@
 <?php
-include '../dbh.php';
-include_once "functions.php";
+include  __DIR__ . '/../dbh.php';
+include_once __DIR__ . '/functions.php';
 
 
   $im = "SELECT * FROM movies" ;
