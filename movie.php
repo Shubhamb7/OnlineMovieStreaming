@@ -33,6 +33,7 @@ if (isset($_POST['submit'])) {
             $mname = $result['name'];
             $person = $_SESSION['id'];
             $movieid = $result['mid'];
+            $score = $result['score'];
             $current = $result['viewers'];
             $newcount = $current + 1;
             $newsql = "UPDATE movies SET viewers = '$newcount' WHERE name='$mname' ";
@@ -52,8 +53,9 @@ if (isset($_POST['submit'])) {
           echo" - ";
           echo"<h5 style='display: inline;color:orange;' >Runtime : </h5><h5 style='display: inline;color:#D8D8D8;'>".$result['runtime']." mins </h5>";
           echo" - ";
+          echo"<h5 style='display: inline;color:orange;' >Score : </h5><h5 style='display: inline;color:#D8D8D8;'>".$result['score']."</h5></div>";
+          echo" - ";
           echo"<h5 style='display: inline;color:orange;' >Views : </h5><h5 style='display: inline;color:#D8D8D8;'>".$result['viewers']."</h5></div>";
-
 
 
 

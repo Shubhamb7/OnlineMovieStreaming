@@ -3,6 +3,10 @@ body{
   height: 100%;
 }
 
+input:required {
+    border-bottom: 2px solid tomato;
+}
+}
 .navbar-text{
   font-size: 30px;
   font-weight: bold;
@@ -16,9 +20,18 @@ body{
   font-size: 25px;
 
 }
-.nav-item a:hover{
-  color: orange;
-  border-bottom: 2px solid orange;
+.navbar ul li::after{
+ content: "";
+  height: 3px;
+  width: 0;
+  background: orange;
+  position: absolute;
+  transition: 0.5s
+
+}
+
+.navbar ul li:hover::after {
+  width:125px;
 }
 
 .jumbotron{
@@ -31,9 +44,6 @@ body{
   font-weight: bold;
 
 }
-
-
-
 
 
 .container-fluid{
@@ -64,4 +74,8 @@ body{
 .page-footer{
   background-color: black;
   color: white;
+}
+
+#message{
+    display:none;
 }

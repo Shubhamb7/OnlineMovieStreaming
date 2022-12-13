@@ -15,8 +15,9 @@ if(isset($_POST['submit'])){
 
   echo"<div class='row'>";
     while($final = mysqli_fetch_assoc($display)){
-
-      echoMovie($final['name'], $final['imgpath']);
+    !empty($final['imgpath']) ? $final['imgpath'] : $final['imgpath'] = 'default.jpg';
+        
+      echoMovie($final['name'], $final['imgpath'], $final['score'], $final['genre']);
 
       if ($i==4) {
 

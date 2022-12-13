@@ -14,12 +14,21 @@ body{
   text-decoration: none;
   color: white;
   font-size: 25px;
+}
+    
+.navbar ul li::after{
+ content: "";
+  height: 3px;
+  width: 0;
+  background: orange;
+  position: absolute;
+  transition: 0.5s
 
 }
-.nav-item a:hover{
-  color: orange;
-  border-bottom: 2px solid orange;
-}
+
+.navbar ul li:hover::after {
+  width:125px;
+    }
 
 .jumbotron{
   position: inherit;

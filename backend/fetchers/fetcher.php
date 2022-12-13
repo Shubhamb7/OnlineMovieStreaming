@@ -6,6 +6,7 @@ include_once __DIR__ . '/functions.php';
   $im = "SELECT * FROM movies ORDER BY name ASC" ;
   $records = mysqli_query($conn,$im);
 
+
   start:
   $i=0;
 
@@ -13,7 +14,7 @@ include_once __DIR__ . '/functions.php';
     while($result = mysqli_fetch_assoc($records)){
       !empty($result['imgpath']) ? $result['imgpath'] : $result['imgpath'] = 'default.jpg';
         
-      echoMovie($result['name'], $result['imgpath']);
+      echoMovie($result['name'], $result['imgpath'], $result['score'], $result['genre']);
 
       if ($i==4) {
 

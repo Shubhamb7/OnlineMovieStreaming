@@ -46,6 +46,7 @@ body{
   text-align: center;
   border: 2px solid grey;
 }
+
 .container-fluid h1{
   color: white;
 }
@@ -54,6 +55,60 @@ body{
   background-color: black;
   color: white;
 }
+
 .col a{
   text-align: center;
+}
+
+.poster{
+  position: relative;   
+  overflow: hidden;
+  border-radius: 10px;
+  height: 250px;
+  width: 200px; 
+  margin-top: 30px;
+  margin-left:30px;
+  margin-right:20px; 
+}
+
+.poster .card-movie{
+  border-radius: 10px;
+  height:250px;
+  width: 200px;
+  z-index: 1;
+}
+
+.poster .card-movie:hover {
+  transform: scale(1.2);
+  transition-duration: 0.5s;  
+}
+
+.poster .scoring {
+  position: absolute;
+  bottom: 20px;
+  left: 15px;
+  color: yellow;
+  letter-spacing: 1px;
+  padding: 10px 0;
+  font-size: 85%;
+}
+
+.poster .scoring .star-value{
+    font-size: 80%;
+    color: gray;
+}
+
+.poster .scoring .genre span{
+    color: white;
+    padding: 1px 3px;
+    font-size: 80%;
+    background-color: dodgerblue;
+    border-radius: 4px;
+    width: fit-content;
+    margin-left: 3px;
+}
+
+.poster .scoring .genre span:nth-child(even){
+    background-color: orangered;
+
 }

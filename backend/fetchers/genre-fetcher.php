@@ -36,7 +36,7 @@ include_once "functions.php";
 
     echo"<div class='row'>";
     while($result = mysqli_fetch_assoc($records)){
-      echoMovie($result['name'], $result['imgpath']);
+      echoMovie($result['name'], $result['imgpath'], $result['score'], $result['genre']);
 
       if ($i==4) {
 

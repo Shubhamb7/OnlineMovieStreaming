@@ -31,7 +31,8 @@ SET time_zone = "+00:00";
 CREATE TABLE `movies` (
   `mid` int(10) NOT NULL,
   `name` varchar(30) NOT NULL,
-  `genre` varchar(20) NOT NULL,
+  `genre` varchar(25) NOT NULL,
+  `score` int(1) NOT NULL,
   `rdate` varchar(5) NOT NULL,
   `runtime` varchar(4) NOT NULL,
   `decription` varchar(100) NOT NULL,
@@ -49,7 +50,8 @@ CREATE TABLE `movies` (
 -- Indexes for table `movies`
 --
 ALTER TABLE `movies`
-  ADD PRIMARY KEY (`mid`);
+  ADD PRIMARY KEY (`mid`),
+  ADD UNIQUE KEY `name` (`name`);
 
 --
 -- AUTO_INCREMENT for dumped tables

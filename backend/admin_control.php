@@ -9,6 +9,7 @@ if (isset($_POST['upload'])) {
   $name = strtolower($_POST['mname']);
   $rdate = $_POST['release'];
   $genre = strtolower($_POST['genre']);
+  $score = ($_POST['score']);
   $rtime = $_POST['rtime'];
   $desc = $_POST['desc'];
   $image = $_FILES['image']['name'];
@@ -16,13 +17,13 @@ if (isset($_POST['upload'])) {
 
 
  if (move_uploaded_file($_FILES['image']['tmp_name'],$target) && move_uploaded_file($_FILES['video']['tmp_name'],$targetvid)) {
-  $sql = "INSERT INTO movies (name, rdate, genre, runtime, decription, imgpath, videopath)
-            VALUES( ? , ? , ? , ? , ? , ? , ? )";
+  $sql = "INSERT INTO movies (name, rdate, genre, score, runtime, decription, imgpath, videopath)
+            VALUES( ? , ? , ? , ? , ? , ? , ?, ? )";
 
   mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
   $stmt = $conn->prepare($sql);
 
-  $stmt->bind_param("sssssss", $name, $rdate, $genre, $rtime, $desc, $image, $video);
+  $stmt->bind_param("ssssssss", $name, $rdate, $genre, $score, $rtime, $desc, $image, $video);
 
   $stmt->execute();
 

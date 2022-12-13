@@ -8,9 +8,12 @@ session_start();
  <head>
    <meta charset="utf-8">
    <title>Registration</title>
+   <script src="js/pass.js" defer></script>
    <link rel="stylesheet" href="css/user.css" type="text/css">
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
- </head>
+
+     
+</head>
  <body>
    <header>
      <div class="container-fluid">
@@ -46,7 +49,8 @@ session_start();
              <br>
              <input type="email" class="form-control" placeholder="Email Address" name="mail" value="" required>
              <br>
-             <input type="password" class="form-control" placeholder="Password" name="pass" value="" required>
+             <input type="password" class="form-control" id="PSS" placeholder="Password" name="pass" value="" required>
+             <p id="message">Password is <span id="strenght"></span></p>
 
              <div class="form-group col-md-8" >
                <label for="dob"> <br> Birthday </label>
@@ -183,5 +187,7 @@ session_start();
    </div>
 
  </footer>
+
    </body>
+
  </html>
