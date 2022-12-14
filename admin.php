@@ -41,7 +41,7 @@ session_start();
              <br>
              <input type="text" class="form-control" placeholder="Genre" name="genre" value="">
              <br>
-               <input type="number" class="form-control" placeholder="Score" name="score" value="">
+               <input type="number" class="form-control" placeholder="Score (1-5)" name="score" min="1" max="5">
              <br>
              <input type="number" class="form-control" placeholder="Runtime in minutes" name="rtime" value="">
              <br>

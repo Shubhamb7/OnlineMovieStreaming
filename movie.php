@@ -48,17 +48,14 @@ if (isset($_POST['submit'])) {
 
 
           echo"<br><div class='info'><h5 style='display: inline;color:#D8D8D8;'>".$result['rdate']."</h5>";
-          echo" - ";
           echo"<h5 style='display: inline;color:#D8D8D8;'>".ucwords($result['genre'])."</h5>";
-          echo" - ";
+          echo"<br>";
           echo"<h5 style='display: inline;color:orange;' >Runtime : </h5><h5 style='display: inline;color:#D8D8D8;'>".$result['runtime']." mins </h5>";
           echo" - ";
-          echo"<h5 style='display: inline;color:orange;' >Score : </h5><h5 style='display: inline;color:#D8D8D8;'>".$result['score']."</h5></div>";
+          echo"<h5 style='display: inline;color:orange;' >Score : </h5><h5 style='display: inline;color:#D8D8D8;'>".$result['score']."</h5>";
           echo" - ";
           echo"<h5 style='display: inline;color:orange;' >Views : </h5><h5 style='display: inline;color:#D8D8D8;'>".$result['viewers']."</h5></div>";
-
-
-
+          echo"</div>";
 
             echo"</div>";
             echo"</div>";
