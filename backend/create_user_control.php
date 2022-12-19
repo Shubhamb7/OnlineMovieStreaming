@@ -21,8 +21,11 @@ $options = ['cost' => 12];
 $hash = password_hash($password, PASSWORD_DEFAULT, $options);
 
     $sql = "INSERT INTO user1(username, passwd, name, phone, email, DOB)
-    values('$username','$hash','$name','$phn','$email','$dob')";
-    $result = $conn->query($sql);
+    values( ? , ? , ? , ? , ? , ? )";
+
+    $stmt = $conn->prepare($sql);
+    $stmt->bind_param("ssssss", $username, $hash, $name, $phn, $email, $dob);
+    $stmt->execute();
 
     header("Location: ../user-login.php");
 ?>

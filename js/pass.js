@@ -44,9 +44,17 @@ function validate(){
       strng.innerHTML = "strong";
       mssg.style.color = "green";
       pass.style.borderColor = "green";
-        }
+    }
 }                      
            
-    
+
+function ShowPassword() {
+  if (pass.type === "password") {
+    pass.type = "text";
+  } else {
+    pass.type = "password";
+  }
+}
+
 pass.addEventListener('input', validate);
     

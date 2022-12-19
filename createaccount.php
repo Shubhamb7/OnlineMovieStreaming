@@ -11,7 +11,6 @@ session_start();
    <script src="js/pass.js" defer></script>
    <link rel="stylesheet" href="css/user.css" type="text/css">
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
      
 </head>
  <body>
@@ -49,8 +48,12 @@ session_start();
              <br>
              <input type="email" class="form-control" placeholder="Email Address" name="mail" value="" required>
              <br>
-             <input type="password" class="form-control" id="PSS" placeholder="Password" name="pass" value="" required>
+               <div class="pass-group">
+               <input type="password" class="form-control" id="PSS" placeholder="Password" name="pass" value="" required>
+               <span id="pass-symbol"  onclick="ShowPassword()">&#10004;</span>
+               </div>
              <p id="message">Password is <span id="strenght"></span></p>
+               <br>
 
              <div class="form-group col-md-8" >
                <label for="dob"> <br> Birthday </label>

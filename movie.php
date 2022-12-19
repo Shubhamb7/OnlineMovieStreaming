@@ -27,7 +27,7 @@ if (isset($_POST['submit'])) {
     echo"</head>";
     echo"<body style='background-color:#000000;'>";
 
-        echo"<div class='jumbotron' style='background-color:#1C1C1C;margin-bottom: 0px;'>";
+        echo"<div class='jumbotron' style='background-color:#1C1C1C;margin-bottom: 0px; background-image: url(images/back_movie.jpg); background-size: cover;'>";
         echo"<div class='inner'>";
         while($result = mysqli_fetch_assoc($records)){
             $mname = $result['name'];
@@ -43,11 +43,12 @@ if (isset($_POST['submit'])) {
 
             echo"<a href='homepage.php' style='font-size: 20px;color:orange;border:1px solid orange;border-radius:5px;padding:10px;text-decoration:none;'>Back to Home </a><br>";
 
-          echo "<br></div><h1 style='display: inline;color:#D8D8D8;'>".ucwords($result['name'])."</h1>";
+          echo "<br><h1 style='display: inline;color:#D8D8D8;'>".ucwords($result['name'])."</h1>";
           echo"<br><h5 style='display: inline;color:#D8D8D8;'>".ucfirst($result['decription'])."</h5>";
 
 
           echo"<br><div class='info'><h5 style='display: inline;color:#D8D8D8;'>".$result['rdate']."</h5>";
+          echo" - ";
           echo"<h5 style='display: inline;color:#D8D8D8;'>".ucwords($result['genre'])."</h5>";
           echo"<br>";
           echo"<h5 style='display: inline;color:orange;' >Runtime : </h5><h5 style='display: inline;color:#D8D8D8;'>".$result['runtime']." mins </h5>";

@@ -24,9 +24,11 @@ $stmt->bind_param("s", $username);
 $stmt->execute();
 $row = $stmt->get_result()->fetch_assoc(); // get the mysqli result
 
-if (is_array($row))
-
+if (!is_array($row))
 {
+    echo "incorrect username or password";
+}
+else{
   if (password_verify($password, $row['passwd']))
   {
     /* The password is correct. */

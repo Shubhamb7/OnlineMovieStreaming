@@ -54,8 +54,6 @@ input:required {
   background-attachment: fixed;
 }
 
-
-
 .navbar-brand img{
   height: 80px;
 
@@ -78,4 +76,19 @@ input:required {
 
 #message{
     display:none;
+}
+
+
+.pass-group{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+#pass-symbol{
+    position: absolute;
+    cursor: pointer;
+    right: 10px;
+    font-size: 200%;
+    color: royalblue;
 }
